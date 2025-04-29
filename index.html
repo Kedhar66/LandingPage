@@ -1,46 +1,87 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <title>Landing Page</title>
-    <style>
-     .jumbotron{
-        background-image: url("../jambostroneimage.jpg");
-        background-size: cover;
-        text-align: center;
-        margin-top: 50px;
-        color: white !important;
-        
-     }
-     #content{
-        text-align: center;
+    
+<style>
+  .jumbotron {
+    background-image: url("./jambostroneimage.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    margin-top: 50px;
+    color: white !important;
+  }
 
-     }
-     .card-deck{
+  #content {
+    text-align: center;
+  }
+
+  .card-deck {
     margin-left: 170px;
     padding-top: 20px;
+  }
 
-     }
-     #appstoreicon{
-        width: 200px;
-        border-radius: 6px;
+  #appstoreicon {
+    width: 200px;
+    border-radius: 6px;
+  }
 
-     }
-     .foot{
-        background-color: rgba(0, 183, 255, 0.89);
-        padding-top: 180px;
-        text-align: center;
-        margin-top: 80px;
-        padding-bottom: 250px;
-     }
+  .foot {
+    background-color: rgba(0, 183, 255, 0.89);
+    padding-top:150px;
+    text-align: center;
+    margin-top: 80px;
+    padding-bottom:150px;
+  }
 
-    </style>
+  @media (max-width: 992px) {
+    .card-deck {
+      margin-left: 0;
+      display: block;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #appstoreicon {
+      width: 150px;
+    }
+
+    .foot {
+      padding: 40px 20px;
+    }
+
+    .form-inline {
+      flex-direction: column;
+    }
+
+    .form-inline .form-control,
+    .form-inline .btn {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .jumbotron h1 {
+      font-size: 28px;
+    }
+
+    .jumbotron p {
+      font-size: 16px;
+    }
+  }
+</style>
+
   </head>
   <body data-spy="scroll" data-target="#navbar" data-offset="150">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
@@ -85,7 +126,7 @@
       </div>
       <div class="card-deck container" id="about">
         <div class="card">
-          <img class="card-img-top" src="../cardimage.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./cardimage.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -93,7 +134,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="../cardimage.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./cardimage.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -101,7 +142,7 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="../cardimage.jpg" alt="Card image cap">
+          <img class="card-img-top" src="./cardimage.jpg" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -112,7 +153,7 @@
       <div class="foot"  id="footer"  >
         <h3>Download the app!</h3>
         <p>Really, why should i download this app??</p>
-        <p><a href="#"><img  id="appstoreicon" src="../appstoreimage.jpg" alt=""></a></p>
+        <p><a href="#"><img  id="appstoreicon" src="./appstoreimage.jpg" alt=""></a></p>
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
